@@ -1,8 +1,89 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <!--Import Google Icon Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
-<head>
+     <!--Import bulma.css-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <title>Crossing the Causeway</title>
+     <meta name="description" content="Data Studio Project 1" data-react-helmet="true">
+     <meta property="og:title" content="Crossing the Causeway" data-react-helmet="true">
+     <meta property="og:description" content="Data Studio Project 1" data-react-helmet="true">
+     <meta property="og:type" content="website" data-react-helmet="true">
+     <meta name="twitter:card" content="summary" data-react-helmet="true">
+     <meta name="twitter:creator" content="@rachelphua_el" data-react-helmet="true">
+     <meta name="twitter:title" content="rachelphua_el" data-react-helmet="true">
+     <meta name="twitter:description" content="Data Studio Project 1" data-react-helmet="true">
+   
+   
+     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+     <link rel="manifest" href="/site.webmanifest">
+     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+     <meta name="msapplication-TileColor" content="#da532c">
+     <meta name="theme-color" content="#ffffff">
+
   <style>
+
+      .headerimage {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        background-image: url("Malaysia-Singapore_Second_Link_bridge.jpg");
+        width: 100%;
+        height: 100vh;
+        background-size: cover;}
+
+      .intro {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        color: rgb(79, 77, 77);
+        text-align: center;
+      }
+
+      #currenttime {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 200px;
+        font-weight: bold;
+        color: rgb(79, 77, 77);
+        text-align: center;
+      }
+
+      .restofsentence {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        color: rgb(79, 77, 77);
+        text-align: center;
+      }
+
+      #storeStatus {
+        margin-top: 3.5%;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 30px;
+        font-weight: normal;
+        color: rgb(79, 77, 77);
+        text-align: center;
+      }
+
+      .asterisk {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 10px;
+        font-weight: light;
+        color: rgb(79, 77, 77);
+        text-align: center;
+      }
+
       .traffic {
       display: flex;
       justify-content:space-evenly;
@@ -14,18 +95,28 @@
   </style>
 </head>
 <body>
+  <body style="background-color:#ffffff">
+    <div class="container">
+      <div class="row">
+        <div class="photoandintro">
+          <!--top photo-->
+          <div class="headerimage" style="max-width:100%; height:300px">
+            </figure>
+          </div>
+  
+          <!--Text introduction-->
+          <div class="intro">
+            <p>IT'S NOW </p>
+          </div>
 
- <div id="intro">
-    <p>IT'S NOW </p>
-</div>
+
 <p id="currenttime"></p>
-
 <script>
     function displayTime() {
       var date = new Date();
       date = new Date(date.getTime() + 13*60*60*1000);
       var options = {
-        hour: 'numeric',
+        hour: '2-digit',
         minute: 'numeric',
         second: 'numeric',
         hour12: false
@@ -36,7 +127,8 @@
     setInterval(displayTime, 1000);
     displayTime();
   </script>
-<div id="restofsentence">
+
+<div class="restofsentence">
     <p>IN SINGAPORE.</p>
 </div>
 
@@ -68,9 +160,9 @@
       case 3: // Wednesday
       case 4: // Thursday
         if (currentHour >= 10 && currentHour < 22) {
-          storeStatus = "OPEN.";
+          storeStatus = "<strong>OPEN</strong>.";
         } else {
-          storeStatus = "CLOSED.";
+          storeStatus = "<strong>CLOSED</strong>.";
         }
         break;
     }
@@ -80,9 +172,7 @@
   checkStoreStatus();
 </script>
 
-  
-
-<div id="*">
+<div class="asterisk">
     <p>*I'm using ÆON Mall Bukit Indah's opening and closing hours as my reference.</p>
 </div>
 

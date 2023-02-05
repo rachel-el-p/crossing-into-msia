@@ -21,3 +21,6 @@ Usin data.gov.sg's traffic images and API, I used JavaScript to show the current
 I also looked at hourly photos of the traffic at the two causeways from 5 p.m. on Friday, 13th January 2023 to 5 a.m. on Monday, 16th January 2023, and looked at the time the ÆON supermarket in Bukit Indah</a>, a district in Johor Bahru, is open. From here, I came up with the tables whether it's a good time to go to JB and return to Singapore.
 
 Then I compared prices of four grocery items from NTUC Fairprice (Singapore)and ÆON (Malaysia), and the petrol prices in and Malaysia on Sunday, February 5th, 2023 SGT.
+
+My website here: https://rachel-el-p.github.io/crossing-into-msia/
+Traffic data analysis and price comparison here: https://docs.google.com/spreadsheets/d/1RwDYyrYwigcNyNI6RbavgkBuhSmY634hcxj0z982yJA/edit?usp=sharing

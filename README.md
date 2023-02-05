@@ -1,25 +1,28 @@
-# Data Studio Project 1 
-## GOING TO MALAYSIA 
+# Data Studio Project 1: GOING TO MALAYSIA 
 
-"Something I miss from home" — there are many things I long for: cheap hawker food, kopi (o kosong!), loved ones, Singlish, McSpicy, not spending 15 minutes putting on winter wear, and several more things. 
-But the one thing I miss that I felt would yield a fun project was going to Malaysia, which is right next to Singapore. 
-I'm not the only one. Many Singaporeans love to go to Johor Bahru, or JB as most people know it. It's a city in the state of Johor that's at the southern tip of Peninsular Malaysia. 
-Food, haircuts, groceries, petrol, medicine, and generally most things are more affordable there. It makes for a great weekend trip.
+This is my submission for the Data Studio class' first assignment. The prompt was "something you miss from home."
 
-To get across, you cross either a bridge at Woodlands, a neighborhood at the northern part of Singapore, or Jurong, on the western end of the city-state. 
-Most people get there by foot, car, motorbike, or bus. Some also take the train from Woodlands.
+I grabbed via an [API traffic images](https://data.gov.sg/dataset/traffic-images) of the two causeways that connect Singapore and Malaysia's Johor Bahru. Many Singaporeans like myself like to go to the Malaysian city to shop and eat. Many Malaysians from the city also travel to Singapore every day for work. 
 
-The problem about going to JB is that since I'm not the only one who is clamoring for a good deal, traffic is often bad. When it is, it means you have to wait a long time to get past the immigration checkpoints.
+I wanted to create a website where a reader could automatically know what time it is in Singapore/Malaysia, the latest traffic details, and whether
+[a popular supermarket was opened or closed](https://aeonmallmy.com/mall/aeon-mall-bukit-indah/contact) depending on the time.
 
-A trip that should take up to hour by car — when there is no traffic — can sometimes take three to four hours, based on my experience.
-So as my first project based on the prompt, I decided to create a webpage that tells you what time it is in Singapore and Malaysia right now, whether the supermarket in JB is open or closed, if it's a good time to go based on recent traffic photos, and how prices of things compare in both countries.
+For my data analysis, I looked at recent hourly traffic images of the causeways over one weeked and created a table that said whether it was a good time to go depending on the road conditions. I found that the Jurong causeway — the side entering Malaysia — had fewer traffic jams than the Woodlands causeway.
+Jurong is a little further from Singapore's city center than Woodlands, and the Malaysian side right across from Woodlands has a few malls conveniently
+located at the border, but if you're driving, entering Malaysia from Jurong might be a better idea. 
 
-## Methodology
+I also found that Saturday afternoons and Sundays are a good time to go shopping in Malaysia. Coming back to Singapore might be an issue though, especially
+on a Sunday evening, since you're be waiting in line with the Malaysians entering Singapore for work too. Traffic can be unpredictable too. For example,
+on Sunday 15 Jan, on the Woodlands causeway entering Singapore, there were traffic jams at 6 p.m. and 8 p.m. but not 7 p.m. and 9 p.m.
 
-Usin data.gov.sg's traffic images and API, I used JavaScript to show the current time and upload photos of the traffic at the two causeways. The two photos you see are updated every 10 minutes.
+Lastly, I did a simple price comparison of grocery items and petrol prices by manually looking them up online from Singapore's [NTUC Fairprice](https://www.fairprice.com.sg/) and [Malaysia's Aeon](https://myaeon2go.com/). Unsurprisingly, things were cheaper in
+Malaysia than Singapore. The biggest shock for me was the price of a fresh chicken — Singaporeans are paying more than triple the price as our neighbors.
 
-I also looked at hourly photos of the traffic at the two causeways from 5 p.m. on Friday, 13th January 2023 to 5 a.m. on Monday, 16th January 2023, and looked at the time the ÆON supermarket in Bukit Indah</a>, a district in Johor Bahru, is open. From here, I came up with the tables whether it's a good time to go to JB and return to Singapore.
+The story webpage is here: https://rachel-el-p.github.io/crossing-into-msia
 
-Then I compared prices of four grocery items from NTUC Fairprice (Singapore)and ÆON (Malaysia), and the petrol prices in and Malaysia on Sunday, February 5th, 2023 SGT.
+## Skills learned: 
+I got the chance to pick up html more. Also, how to use the auto updating code, and how to pick out the right information from the API. 
 
-My website here: https://rachel-el-p.github.io/crossing-into-msia
+## Things I would've liked to do:
+I would've wanted to create fancy clocks that tell you the best times to go to Malaysia, a table where the row that corresponds to the current time
+is lighted up, and to draw cute-looking bread, eggs, and chicken. Maybe when I pick up Adobe Illustrator and JavaScript skills.

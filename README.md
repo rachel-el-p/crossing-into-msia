@@ -1,5 +1,5 @@
 # GOING TO MALAYSIA 
-Data Studio Project 1 
+## Data Studio Project 1 
 
 "Something I miss from home" — there are many things I long for: cheap hawker food, kopi (o kosong!), loved ones, Singlish, McSpicy, not spending 15 minutes putting on winter wear, and several more things. 
 But the one thing I miss that I felt would yield a fun project was going to Malaysia, which is right next to Singapore. 

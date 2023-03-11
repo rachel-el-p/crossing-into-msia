@@ -300,15 +300,17 @@
 <p id="currenttime"></p>
 <script>
     function displayTime() {
-      var date = new Date();
-      date = new Date(date.getTime() - 1*60*60*1000);
+      function displayTime() {
+  var date = new Date();
+  var singaporeTime = date.toLocaleString("en-US", { timeZone: "Asia/Singapore" });
+  document.getElementById("currenttime").innerHTML = singaporeTime;
+}
       var options = {
         hour: '2-digit',
         minute: 'numeric',
         second: 'numeric',
         hour12: false
       };  
-      var time = date.toLocaleString('en-US', options);
       document.getElementById("currenttime").innerHTML = time;
     }
     setInterval(displayTime, 1000);
